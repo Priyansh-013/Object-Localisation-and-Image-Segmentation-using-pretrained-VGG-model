@@ -68,20 +68,28 @@ final("images/image8.jpeg")
   - First layer with input size 25088 and output size 4096.
   - Second layer with input size 4096 and output size 4096.
   - Third layer with input size 4096 and output size 1000
-  - Softmax activation
+
+**Saliency Function**:
+- Softmax (over the 1000 class scores produces)
+- BackProp this Softmax Class Score with respect to each pixel value
 
 **Optimiser** : Adam Optimiser
+
 
 # Results
 [(Back to top)](#table-of-contents)
 
-Using *matplotlib* , Input image, transformed image(for VGG) and final Saliency Map is plotted.
+Using `matplotlib` , Input image, transformed image(for VGG) and final Saliency Map is plotted.
 ![fig1](heatmaps/combined_image1.png)
 ![fig2](heatmaps/combined_image2.png)
 ![fig3](heatmaps/combined_image3.png)
 ![fig4](heatmaps/combined_image4.png)
 
+
+
 Also, although this part has not been perfected yet but I am also trying to fit in a box around the 'Object' thus found and labelled in the image.
+
+
 
 ![fig5](heatmaps/boxed_combined_image1.png)
 ![fig6](heatmaps/boxed_combined_image2.png)
