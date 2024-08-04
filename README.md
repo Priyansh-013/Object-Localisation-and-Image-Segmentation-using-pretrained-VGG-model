@@ -70,7 +70,7 @@ final("images/image8.jpeg")
   - Third layer with input size 4096 and output size 1000
 
 **Saliency Function**:
-- Softmax (over the 1000 class scores produces)
+- Softmax (over the 1000 class scores produced)
 - BackProp this Softmax Class Score with respect to each pixel value
 
 **Optimiser** : Adam Optimiser
